@@ -29,7 +29,7 @@
 #import "OSHelper.h"
 #import "UIImage+Util.h"
 #import "WXApi.h"
-#import "ShareManager.h"
+#import <UMSocialCore/UMSocialCore.h>
 #import "HttpService.h"
 #import "ExamService.h"
 #import "CircleService.h"

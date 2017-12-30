@@ -8,7 +8,10 @@
 
 #import "MyCashViewController.h"
 #import "GuideViewController.h"
-@interface MyCashViewController ()
+
+#import "ShareView.h"
+@interface MyCashViewController ()<ZZShareViewDelegate>
+@property (nonatomic, strong) ShareView *shareView;
 @property (nonatomic, strong)  PersonModel      *userInfo;
 @end
 
@@ -20,6 +23,17 @@
     NSMutableArray *dataList;
     
     NSInteger seletIndex;
+}
+
+- (ShareView *)shareView{
+    
+    if (!_shareView) {
+        
+        _shareView = [[ShareView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+        _shareView.delegate = self;
+        
+    }
+    return _shareView;
 }
 
 - (PersonModel *)userInfo{
@@ -54,6 +68,75 @@
 }
 
 
+- (void)shareView:(ShareView *)shareView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+//    NSArray *imageArray = @[@"朋友圈",@"微信好友",@"新浪微博",@"QQ好友",@"QQ空间"];
+   
+    
+    [self shareWebPageToPlatformType:UMSocialPlatformType_WechatSession];
+}
+
+- (void)shareWebPageToPlatformType:(UMSocialPlatformType)platformType
+{
+    //创建分享消息对象
+    UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];
+    
+    //创建网页内容对象
+//    NSString* thumbURL =  @"https://mobile.umeng.com/images/pic/home/social/img-1.png";
+    UMShareWebpageObject *shareObject = [UMShareWebpageObject shareObjectWithTitle:@"分享" descr:@"双赢广告" thumImage:[UIImage imageNamed:@"IOS-81"]];
+    
+    //设置网页地址
+    shareObject.webpageUrl = @"http://mobile.umeng.com/social";
+    
+    //分享消息对象设置分享内容对象
+    messageObject.shareObject = shareObject;
+    
+    //调用分享接口
+    [[UMSocialManager defaultManager] shareToPlatform:platformType messageObject:messageObject currentViewController:self completion:^(id data, NSError *error) {
+        if (error) {
+            UMSocialLogInfo(@"************Share fail with error %@*********",error);
+            [self showHudWithString:@"分享失败"];
+        }else{
+            if ([data isKindOfClass:[UMSocialShareResponse class]]) {
+                UMSocialShareResponse *resp = data;
+                //分享结果消息
+                
+                
+                [[MineService shareInstanced]delAddressWithIds:@{@"token":self.userInfo.use.ftoken,
+                                                                 @"payCount":self.userInfo.use.falipay,
+                                                                 @"menoy":dataList[seletIndex][@"famount"]
+                                                                 
+                                                                 
+                                                                 }];
+                [self showHud];
+                [MineService shareInstanced].delAddressSuccess = ^(id obj){
+                    
+                    [self hideHud];
+                    
+                    [self showHudWithString:@"提现申请已提交"];
+                    
+                    [self.navigationController popViewControllerAnimated:YES];
+                };
+                [MineService shareInstanced].delAddressFailure = ^(id obj){
+                    
+                    [self hideHud];
+                    [self showHudWithString:obj];
+                };
+
+                
+                
+                UMSocialLogInfo(@"response message is %@",resp.message);
+                //第三方原始返回的数据
+                UMSocialLogInfo(@"response originalResponse data is %@",resp.originalResponse);
+                
+            }else{
+                UMSocialLogInfo(@"response data is %@",data);
+            }
+        }
+//        [self alertWithError:error];
+    }];
+}
+
 - (IBAction)doneAction:(id)sender {
     
     if (seletIndex+1 && dataList.count == 6) {
@@ -64,27 +147,10 @@
             [self.navigationController pushViewController:vc animated:YES];
             return;
         }
-        [[MineService shareInstanced]delAddressWithIds:@{@"token":self.userInfo.use.ftoken,
-                                                         @"payCount":self.userInfo.use.falipay,
-                                                         @"menoy":dataList[seletIndex][@"famount"]
-          
-                                                         
-                                                         }];
-        [self showHud];
-        [MineService shareInstanced].delAddressSuccess = ^(id obj){
-            
-            [self hideHud];
-            
-            [self showHudWithString:@"提现申请已提交"];
-            
-            [self.navigationController popViewControllerAnimated:YES];
-        };
-        [MineService shareInstanced].delAddressFailure = ^(id obj){
-            
-            [self hideHud];
-            [self showHudWithString:obj];
-        };
-
+        
+        [self.shareView showInView:self.navigationController.view];
+        
+        
     }
 }
 
