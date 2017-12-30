@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetCell" id="KGk-i7-Jjw" customClass="DetCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LT-6q-rev">
+                        <rect key="frame" x="8" y="42" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="wd7-mP-Mg1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安踏有限公司" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfg-fY-gA9">
+                        <rect key="frame" x="74" y="11" width="238" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="T5g-FN-31e"/>
+                            <constraint firstAttribute="width" constant="255" id="UDA-eY-JYP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UDA-eY-JYP"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赞助商" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NZ-A8-8mq">
+                        <rect key="frame" x="8" y="11" width="58" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="58" id="iOE-rQ-HSs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hfg-fY-gA9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6hz-8i-JLg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1LT-6q-rev" secondAttribute="bottom" constant="-8" id="BgK-88-87v"/>
+                    <constraint firstItem="hfg-fY-gA9" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="33" id="KXS-8Z-XOG"/>
+                    <constraint firstItem="1LT-6q-rev" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Rd0-5B-KT4"/>
+                    <constraint firstItem="9NZ-A8-8mq" firstAttribute="leading" secondItem="1LT-6q-rev" secondAttribute="leading" id="Rq9-Jr-mbb"/>
+                    <constraint firstItem="hfg-fY-gA9" firstAttribute="baseline" secondItem="9NZ-A8-8mq" secondAttribute="baseline" id="c4W-3j-IZt"/>
+                    <constraint firstItem="hfg-fY-gA9" firstAttribute="firstBaseline" secondItem="9NZ-A8-8mq" secondAttribute="firstBaseline" id="jVh-EA-xkT"/>
+                    <constraint firstItem="1LT-6q-rev" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="lZ1-JY-DyR"/>
+                    <constraint firstItem="hfg-fY-gA9" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="tfJ-KG-bZe"/>
+                    <constraint firstItem="hfg-fY-gA9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="66" id="wQX-5d-c1j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cenlab" destination="hfg-fY-gA9" id="Uzz-fx-N59"/>
+                <outlet property="leflab" destination="9NZ-A8-8mq" id="DCy-5I-Vw2"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LearnMainViewController">
+            <connections>
+                <outlet property="collecview" destination="XHF-0O-f1i" id="Agb-4Y-7ym"/>
+                <outlet property="contenView" destination="b7G-Sh-9XU" id="XZD-ge-OZH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XHF-0O-f1i">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="6Mn-EH-HvU"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="egS-Tc-aBd">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Doc-Ex-fxb"/>
+                        <outlet property="delegate" destination="-1" id="lTj-eE-gcZ"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7G-Sh-9XU">
+                    <rect key="frame" x="0.0" y="46" width="320" height="458"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XHF-0O-f1i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1XP-Qq-hqi"/>
+                <constraint firstAttribute="trailing" secondItem="b7G-Sh-9XU" secondAttribute="trailing" id="3CY-4Z-bHM"/>
+                <constraint firstAttribute="bottom" secondItem="b7G-Sh-9XU" secondAttribute="bottom" id="CMc-eh-l39"/>
+                <constraint firstItem="b7G-Sh-9XU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ddp-Zs-FdK"/>
+                <constraint firstItem="XHF-0O-f1i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tfl-Qy-M4O"/>
+                <constraint firstItem="b7G-Sh-9XU" firstAttribute="top" secondItem="XHF-0O-f1i" secondAttribute="bottom" constant="1" id="u4e-zm-Pqx"/>
+                <constraint firstAttribute="trailing" secondItem="XHF-0O-f1i" secondAttribute="trailing" id="vam-cC-oE4"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="445" y="262"/>
+        </view>
+    </objects>
+</document>

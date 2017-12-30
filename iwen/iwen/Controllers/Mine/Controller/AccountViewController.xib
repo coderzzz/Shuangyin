@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountViewController">
+            <connections>
+                <outlet property="lab" destination="057-sQ-V46" id="CWk-JO-i6y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IbJ-wR-zv7">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="红包" translatesAutoresizingMaskIntoConstraints="NO" id="vh7-Ha-ukQ">
+                            <rect key="frame" x="130" y="25" width="60" height="59"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="59" id="6RI-Yr-bEc"/>
+                                <constraint firstAttribute="width" constant="60" id="TjC-VR-SbQ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1350 元" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="057-sQ-V46">
+                            <rect key="frame" x="71" y="103" width="178" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="TBG-Vm-Yfs"/>
+                                <constraint firstAttribute="width" constant="178" id="fKu-dG-Was"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="vh7-Ha-ukQ" firstAttribute="centerX" secondItem="IbJ-wR-zv7" secondAttribute="centerX" id="2QT-ke-waW"/>
+                        <constraint firstItem="057-sQ-V46" firstAttribute="centerX" secondItem="IbJ-wR-zv7" secondAttribute="centerX" id="9UC-Ro-MWu"/>
+                        <constraint firstItem="vh7-Ha-ukQ" firstAttribute="top" secondItem="IbJ-wR-zv7" secondAttribute="top" constant="25" id="Q2B-GV-3Fq"/>
+                        <constraint firstAttribute="height" constant="151" id="VcY-br-TUo"/>
+                        <constraint firstItem="057-sQ-V46" firstAttribute="top" secondItem="vh7-Ha-ukQ" secondAttribute="bottom" constant="19" id="fKi-A6-rQh"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tx7-ZA-4Bg">
+                    <rect key="frame" x="0.0" y="464" width="320" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="A62-6e-6KJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="联系管理员充值">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pay:" destination="-1" eventType="touchUpInside" id="pFb-bF-oev"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="tx7-ZA-4Bg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fai-eb-CxO"/>
+                <constraint firstItem="IbJ-wR-zv7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="G0Y-7E-o8z"/>
+                <constraint firstAttribute="bottom" secondItem="tx7-ZA-4Bg" secondAttribute="bottom" id="Sny-ts-QWo"/>
+                <constraint firstItem="IbJ-wR-zv7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ayc-Be-gK1"/>
+                <constraint firstAttribute="trailing" secondItem="tx7-ZA-4Bg" secondAttribute="trailing" id="gaM-eB-BXP"/>
+                <constraint firstAttribute="trailing" secondItem="IbJ-wR-zv7" secondAttribute="trailing" id="sSt-kc-OJV"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="475" y="152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="红包" width="75" height="75"/>
+    </resources>
+</document>

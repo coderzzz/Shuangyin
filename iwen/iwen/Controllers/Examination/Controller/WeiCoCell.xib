@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeiCo" rowHeight="412" id="KGk-i7-Jjw" customClass="WeiCoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="412"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="默认头像" id="1MO-mv-9d0">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李四" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GgW-K3-6KB">
+                        <rect key="frame" x="66" y="8" width="187" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-10-05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u8X-4a-yB1">
+                        <rect key="frame" x="66" y="32" width="104" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v2V-NX-8Yb">
+                        <rect key="frame" x="8" y="60" width="304" height="41"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <string key="text">苹果将在iPhone解锁听证会前一日举行春季媒体发布会】- 苹果公司周四向媒体发出了在3月21日举行活动的邀请，而此后一日联邦法院将就该公司与美国政府关于解锁iPhone的纠纷举行听证会。虽然大部分的产品展示将在今年稍后推出，但该公司也会在春季发布新产品或产品更新</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" id="SdI-mI-nOl">
+                        <rect key="frame" x="0.0" y="396" width="320" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" id="U67-BT-qPf">
+                        <rect key="frame" x="0.0" y="109" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dva-DY-KMH">
+                        <rect key="frame" x="8" y="109" width="304" height="170"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="播放"/>
+                        <connections>
+                            <action selector="play:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZcV-YZ-0bx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S3d-A9-AWX">
+                        <rect key="frame" x="8" y="287" width="43" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0vF-au-fQn">
+                        <rect key="frame" x="66" y="287" width="43" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="haH-PF-4aV">
+                        <rect key="frame" x="117" y="287" width="43" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wd4-Ak-8qA">
+                        <rect key="frame" x="178" y="287" width="43" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="akq-lf-chg">
+                        <rect key="frame" x="14" y="341" width="43" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iH9-oX-gif">
+                        <rect key="frame" x="72" y="341" width="43" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dho-EL-emh">
+                        <rect key="frame" x="184" y="341" width="43" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SAq-2L-eo5">
+                        <rect key="frame" x="243" y="287" width="43" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="igc-AU-LSM">
+                        <rect key="frame" x="123" y="341" width="43" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HcA-cB-JDi">
+                        <rect key="frame" x="293" y="22" width="19" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="删除"/>
+                        <connections>
+                            <action selector="deleAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Pjf-y6-5Kl"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ow5-Sg-dBe">
+                        <rect key="frame" x="229" y="372" width="83" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="-6"/>
+                        <state key="normal" title="100000" image="赞">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="addLike:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="s8e-G7-xD5"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn1" destination="S3d-A9-AWX" id="Erp-zg-9Xk"/>
+                <outlet property="btn2" destination="0vF-au-fQn" id="MCe-2m-jOO"/>
+                <outlet property="btn3" destination="haH-PF-4aV" id="Fwb-nT-zEf"/>
+                <outlet property="btn4" destination="Wd4-Ak-8qA" id="J8Z-IL-yI8"/>
+                <outlet property="btn5" destination="SAq-2L-eo5" id="Ooz-nG-lKa"/>
+                <outlet property="btn6" destination="akq-lf-chg" id="kbP-tX-5Au"/>
+                <outlet property="btn7" destination="iH9-oX-gif" id="kx0-8P-5jJ"/>
+                <outlet property="btn8" destination="igc-AU-LSM" id="YnG-kr-q4e"/>
+                <outlet property="btn9" destination="dho-EL-emh" id="xZo-ig-cei"/>
+                <outlet property="contenLab" destination="v2V-NX-8Yb" id="TXg-Q4-pTz"/>
+                <outlet property="darkview" destination="SdI-mI-nOl" id="evk-oB-SF1"/>
+                <outlet property="datelab" destination="u8X-4a-yB1" id="fYi-yL-Sin"/>
+                <outlet property="delbtn" destination="HcA-cB-JDi" id="pA0-Gw-qLa"/>
+                <outlet property="headview" destination="1MO-mv-9d0" id="bO0-ax-RUw"/>
+                <outlet property="likeBtn" destination="ow5-Sg-dBe" id="BI2-Qd-6VU"/>
+                <outlet property="namelab" destination="GgW-K3-6KB" id="RB2-AC-0YN"/>
+                <outlet property="playview" destination="U67-BT-qPf" id="Gua-M6-c8g"/>
+                <outlet property="viderbtn" destination="dva-DY-KMH" id="m81-0c-5rg"/>
+            </connections>
+            <point key="canvasLocation" x="572" y="325"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="删除" width="19" height="18"/>
+        <image name="播放" width="45" height="45"/>
+        <image name="赞" width="20" height="20"/>
+        <image name="默认头像" width="60" height="60"/>
+    </resources>
+</document>

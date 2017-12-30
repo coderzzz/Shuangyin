@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myRangCell" id="KGk-i7-Jjw" customClass="RangCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="纹绣大师" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlT-cR-dKQ">
+                        <rect key="frame" x="84" y="12" width="129" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wn1-6N-xEp">
+                        <rect key="frame" x="221" y="24" width="73" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdc-0X-ROr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="yKQ-Ti-3Tw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="用时40分45秒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcm-2b-jhp">
+                        <rect key="frame" x="84" y="37" width="129" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IM-bP-BCd">
+                        <rect key="frame" x="20" y="12" width="49" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="qid-nd-qDF"/>
+                            <constraint firstAttribute="height" constant="46" id="vg1-Mp-HZt"/>
+                        </constraints>
+                        <state key="normal" title="1" backgroundImage="首页-排行榜--绿牌">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZlT-cR-dKQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="7Qo-5f-lSJ"/>
+                    <constraint firstAttribute="trailing" secondItem="xdc-0X-ROr" secondAttribute="trailing" id="A8J-6U-gTN"/>
+                    <constraint firstItem="xdc-0X-ROr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KLl-lk-5SW"/>
+                    <constraint firstItem="ZlT-cR-dKQ" firstAttribute="leading" secondItem="9IM-bP-BCd" secondAttribute="trailing" constant="15" id="LMH-E4-gvu"/>
+                    <constraint firstItem="xdc-0X-ROr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="69" id="QqB-Xs-Olp"/>
+                    <constraint firstItem="9IM-bP-BCd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="RFP-tj-dCa"/>
+                    <constraint firstItem="xdc-0X-ROr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gwQ-5Z-HML"/>
+                    <constraint firstItem="9IM-bP-BCd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="vTg-AH-ppN"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="QqB-Xs-Olp"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn" destination="9IM-bP-BCd" id="Xvi-lQ-07p"/>
+                <outlet property="lineLab" destination="xdc-0X-ROr" id="Ysh-Zs-cSg"/>
+                <outlet property="nameLab" destination="ZlT-cR-dKQ" id="MUl-uw-WTR"/>
+                <outlet property="one" destination="yKQ-Ti-3Tw" id="arH-Bv-qWw"/>
+                <outlet property="scoreLab" destination="Wn1-6N-xEp" id="O16-rC-wuo"/>
+                <outlet property="timeLab" destination="Xcm-2b-jhp" id="t0p-TA-kld"/>
+            </connections>
+            <point key="canvasLocation" x="235" y="270"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="首页-排行榜--绿牌" width="49" height="46"/>
+    </resources>
+</document>

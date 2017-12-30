@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 4.3">
+    <entity name="Adv" representedClassName="Adv" syncable="YES">
+        <attribute name="detial" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="faddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fcompanyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fcontacts" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fcreatetime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fisCoupon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fisRed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flogo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fstatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ftelPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ftotal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ftypeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fupdatetime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fuserId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fwebsite" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="adv" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Choose" representedClassName="Choose" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="disPlayOrder" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_answer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isSelect" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="subject" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Subject" inverseName="chooses" inverseEntity="Subject" syncable="YES"/>
+    </entity>
+    <entity name="Subject" representedClassName="Subject" syncable="YES">
+        <attribute name="analysis" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answerString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="disPlayOrder" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="examId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFinsh" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ismulti" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="likeStatue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chooses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Choose" inverseName="subject" inverseEntity="Choose" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="fage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="falipay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fcreateTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ffreezeMoney" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fheadImg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fnickName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fpassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fphone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="frealName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="frecommendCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fscore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fsex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fsignature" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fstatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ftoken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ftotal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ftpassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ftype" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="adv" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Adv" inverseName="user" inverseEntity="Adv" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Adv" positionX="-1701" positionY="0" width="128" height="300"/>
+        <element name="Choose" positionX="-1055" positionY="218" width="128" height="178"/>
+        <element name="Subject" positionX="-1314" positionY="143" width="128" height="253"/>
+        <element name="User" positionX="-1485" positionY="81" width="128" height="345"/>
+    </elements>
+</model>

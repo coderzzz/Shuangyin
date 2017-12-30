@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RightViewController">
+            <connections>
+                <outlet property="backBtn" destination="GsO-UD-mbi" id="K8J-0w-bCN"/>
+                <outlet property="lab" destination="N7A-YL-8Zu" id="6Nm-Ea-y2b"/>
+                <outlet property="nextBtn" destination="A5D-h2-p6u" id="L3Y-ws-be3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5D-h2-p6u">
+                    <rect key="frame" x="171" y="240" width="130" height="40"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Y6s-o6-Qz7"/>
+                        <constraint firstAttribute="width" constant="130" id="lgT-w8-Nof"/>
+                    </constraints>
+                    <state key="normal" title="下一章">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnAction:" destination="-1" eventType="touchUpInside" id="BYf-Qc-5hl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsO-UD-mbi">
+                    <rect key="frame" x="171" y="288" width="130" height="40"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ORq-Hw-2nE"/>
+                        <constraint firstAttribute="width" constant="130" id="yAk-89-aME"/>
+                    </constraints>
+                    <state key="normal" title="返回章节目录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="vnL-wQ-TAJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本章节练习已做完，是否开始下一章？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7A-YL-8Zu">
+                    <rect key="frame" x="171" y="191" width="124" height="41"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="0n3-Ji-fKm"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="6FQ-KS-M2k"/>
+                        <constraint firstAttribute="width" constant="124" id="uO2-mI-7n8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GsO-UD-mbi" secondAttribute="trailing" constant="19" id="Aku-uj-dC1"/>
+                <constraint firstItem="GsO-UD-mbi" firstAttribute="top" secondItem="A5D-h2-p6u" secondAttribute="bottom" constant="8" id="Atg-zq-iii"/>
+                <constraint firstItem="N7A-YL-8Zu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="191" id="OgO-Mi-gEY"/>
+                <constraint firstAttribute="trailing" secondItem="N7A-YL-8Zu" secondAttribute="trailing" constant="25" id="Piu-Ip-t3n"/>
+                <constraint firstItem="A5D-h2-p6u" firstAttribute="top" secondItem="N7A-YL-8Zu" secondAttribute="bottom" constant="8" id="Vn9-we-cTc"/>
+                <constraint firstAttribute="trailing" secondItem="A5D-h2-p6u" secondAttribute="trailing" constant="19" id="y4x-xu-HzX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="283" y="330"/>
+        </view>
+    </objects>
+</document>

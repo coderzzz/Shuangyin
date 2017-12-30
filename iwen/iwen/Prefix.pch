@@ -1,0 +1,60 @@
+//
+//  Prefix.pch
+//  iwen
+//
+//  Created by Interest on 15/10/8.
+//  Copyright (c) 2015年 Interest. All rights reserved.
+//
+
+#ifndef iwen_Prefix_pch
+#define iwen_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "AFNetworking.h"
+#import "UIButton+WebCache.h"
+#import "UITableView+Addition.h"
+#import "HWSDK.h"
+#import "RTLabel.h"
+#import "MJRefresh.h"
+#import "MBProgressHUD.h"
+#import "BaseViewController.h"
+#import "BaseNavigationController.h"
+#import "UIImageView+WebCache.h"
+#import "IQKeyboardManager.h"
+#import "PhotoManager.h"
+#import "DetailViewController.h"
+#import "Subject.h"
+#import "Choose.h"
+#import "OSHelper.h"
+#import "UIImage+Util.h"
+#import "WXApi.h"
+#import "ShareManager.h"
+#import "HttpService.h"
+#import "ExamService.h"
+#import "CircleService.h"
+#import "LoginService.h"
+#import "LearnService.h"
+#import "MineService.h"
+#import "AppDelegate.h"
+#import "TabBarViewController.h"
+#import "AllModel.h"
+#import <CoreData/CoreData.h>
+#import "CoreData+MagicalRecord.h"
+//#import <ShareSDK/ShareSDK.h>
+#define BaseColor  [UIColor colorWithRed:255.0/255.0 green:0/255.0 blue:43.0/255.0 alpha:1]
+#define BackgroundColor  [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1]
+#define SeparatorColor  [UIColor colorWithRed:220.0/255.0 green:220.0/255.0 blue:220.0/255.0 alpha:1]
+#define     DEFAULT_GREEN_COLOR             [UIColor colorWithRed:31.0/255 green:185.0/255  blue:34.0/255 alpha:1.0f]
+#define     DEFAULT_SEARCHBAR_COLOR         [UIColor colorWithRed:239.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1.0]
+#define MobKey  @"564002fae0f55a82ab003b2e"
+
+#define DefaultAvatar  [UIImage imageNamed:@"默认头像"]
+
+//获取设备的物理高度
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//获取设备的物理宽度
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#endif

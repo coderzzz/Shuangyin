@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="saveCell" id="KGk-i7-Jjw" customClass="SaveCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ym1-Tz-nDs">
+                        <rect key="frame" x="0.0" y="73" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Tvo-iv-oLa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zb7-XU-ubM">
+                        <rect key="frame" x="160" y="0.0" width="1" height="74"/>
+                        <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="3Yq-7k-VMZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x86-0i-EIC">
+                        <rect key="frame" x="59" y="8" width="35" height="35"/>
+                        <state key="normal" backgroundImage="首页-我的错题">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="btnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="p9K-iy-ITd"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的错题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-uv-fZO">
+                        <rect key="frame" x="41" y="45" width="71" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDi-YF-Yy3">
+                        <rect key="frame" x="227" y="7" width="35" height="35"/>
+                        <state key="normal" backgroundImage="首页-我的收藏">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="btnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EhM-Sn-AO9"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="我的收藏" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceO-7A-X5v">
+                        <rect key="frame" x="212" y="45" width="64" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="oDi-YF-Yy3" secondAttribute="trailing" constant="58" id="1uE-44-er2"/>
+                    <constraint firstAttribute="centerX" secondItem="zb7-XU-ubM" secondAttribute="centerX" id="63h-gI-KJN"/>
+                    <constraint firstItem="ceO-7A-X5v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="45" id="F06-ak-XlN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="zb7-XU-ubM" secondAttribute="bottom" constant="-8" id="FvN-hH-1c3"/>
+                    <constraint firstItem="ym1-Tz-nDs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="LgM-BW-Snp"/>
+                    <constraint firstItem="zb7-XU-ubM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="Twe-xR-j5w"/>
+                    <constraint firstAttribute="bottom" secondItem="ym1-Tz-nDs" secondAttribute="bottom" id="a0F-1x-EWI"/>
+                    <constraint firstAttribute="trailing" secondItem="ceO-7A-X5v" secondAttribute="trailing" constant="44" id="g4F-IX-0Zk"/>
+                    <constraint firstItem="ym1-Tz-nDs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gNV-jL-6yC"/>
+                    <constraint firstAttribute="trailing" secondItem="ym1-Tz-nDs" secondAttribute="trailing" id="pyR-yD-Md4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ym1-Tz-nDs" secondAttribute="bottom" constant="-8" id="q3X-p1-Hcj"/>
+                    <constraint firstItem="oDi-YF-Yy3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="rQv-27-O3C"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ym1-Tz-nDs" secondAttribute="trailing" constant="-8" id="vgk-Pu-RvB"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="LgM-BW-Snp"/>
+                        <exclude reference="q3X-p1-Hcj"/>
+                        <exclude reference="vgk-Pu-RvB"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="butomLine" destination="ym1-Tz-nDs" id="0gE-JG-Zth"/>
+                <outlet property="centerLine" destination="zb7-XU-ubM" id="c9d-Rf-h9h"/>
+                <outlet property="onePixConstraint" destination="3Yq-7k-VMZ" id="Ngx-S6-iV7"/>
+            </connections>
+            <point key="canvasLocation" x="470" y="303.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="首页-我的收藏" width="33" height="33"/>
+        <image name="首页-我的错题" width="33" height="33"/>
+    </resources>
+</document>

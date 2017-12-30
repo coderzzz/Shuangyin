@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainCell" rowHeight="157" id="KGk-i7-Jjw" customClass="ExamMainCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bq1-Ve-LXU">
+                        <rect key="frame" x="8" y="32" width="100" height="100"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="NWH-ly-e52"/>
+                            <constraint firstAttribute="height" constant="100" id="Ypg-84-9Yo"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="123"/>
+                        <connections>
+                            <action selector="pressAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Fza-WY-cGe"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="最新广告" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgB-qv-Fwa">
+                        <rect key="frame" x="8" y="8" width="88" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="BdD-hw-3Sf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P13-bg-e1S">
+                        <rect key="frame" x="8" y="27" width="304" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="9jM-KQ-0HX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fI7-Zv-evS">
+                        <rect key="frame" x="278" y="2" width="34" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="FBa-Br-RK9"/>
+                            <constraint firstAttribute="width" constant="34" id="Q4n-0a-FtB"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" image="首页-刷新"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出口家具品牌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMz-ac-hrq">
+                        <rect key="frame" x="110" y="135" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="OU9-eF-uOb"/>
+                            <constraint firstAttribute="width" constant="100" id="zo1-nG-cbQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="出口家具品牌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bR-f0-8JR">
+                        <rect key="frame" x="212" y="135" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Zfp-Uz-gCT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBC-8R-P5F">
+                        <rect key="frame" x="110" y="32" width="100" height="100"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="RKi-Hs-DD2"/>
+                            <constraint firstAttribute="width" constant="100" id="sOd-LW-oC2"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="123"/>
+                        <connections>
+                            <action selector="pressAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="916-9M-GBC"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pi-CN-IjH">
+                        <rect key="frame" x="212" y="32" width="100" height="100"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="DjI-vO-PGa"/>
+                            <constraint firstAttribute="width" constant="100" id="WbK-Lu-te7"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="123"/>
+                        <connections>
+                            <action selector="pressAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Pau-2B-3o7"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出口家具品牌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58Q-4e-Uma">
+                        <rect key="frame" x="8" y="135" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Pev-bg-yd9"/>
+                            <constraint firstAttribute="height" constant="21" id="UYI-0M-kdy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="5pi-CN-IjH" firstAttribute="top" secondItem="P13-bg-e1S" secondAttribute="bottom" constant="4" id="4UJ-m3-u7r"/>
+                    <constraint firstItem="P13-bg-e1S" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="5bX-Xj-eOp"/>
+                    <constraint firstItem="NgB-qv-Fwa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="CQf-9e-mFb"/>
+                    <constraint firstItem="P13-bg-e1S" firstAttribute="top" secondItem="fI7-Zv-evS" secondAttribute="bottom" constant="3" id="GEo-vh-Mx0"/>
+                    <constraint firstItem="fI7-Zv-evS" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Jhl-gz-Nnf"/>
+                    <constraint firstItem="bq1-Ve-LXU" firstAttribute="top" secondItem="P13-bg-e1S" secondAttribute="bottom" constant="4" id="PLP-c6-pd2"/>
+                    <constraint firstItem="9bR-f0-8JR" firstAttribute="top" secondItem="5pi-CN-IjH" secondAttribute="bottom" constant="3" id="QPp-yE-mXK"/>
+                    <constraint firstItem="P13-bg-e1S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="UOt-SV-h88"/>
+                    <constraint firstItem="5pi-CN-IjH" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="UXU-Do-OJd"/>
+                    <constraint firstItem="tBC-8R-P5F" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ejB-eW-JCv"/>
+                    <constraint firstItem="58Q-4e-Uma" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="eo5-Yl-exp"/>
+                    <constraint firstItem="58Q-4e-Uma" firstAttribute="top" secondItem="bq1-Ve-LXU" secondAttribute="bottom" constant="3" id="ezl-eW-Aca"/>
+                    <constraint firstItem="bq1-Ve-LXU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fQX-2N-DcB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="58Q-4e-Uma" secondAttribute="bottom" constant="-5" id="hBK-AD-F5s"/>
+                    <constraint firstItem="WMz-ac-hrq" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="kOh-F7-fPY"/>
+                    <constraint firstItem="fI7-Zv-evS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-6" id="ncK-jx-5uD"/>
+                    <constraint firstItem="WMz-ac-hrq" firstAttribute="top" secondItem="tBC-8R-P5F" secondAttribute="bottom" constant="3" id="nkZ-Ge-BVL"/>
+                    <constraint firstItem="NgB-qv-Fwa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qCE-BE-188"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WMz-ac-hrq" secondAttribute="bottom" constant="-5" id="r3g-4f-FvB"/>
+                    <constraint firstItem="9bR-f0-8JR" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="uCt-Oc-ztr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cenbtn" destination="tBC-8R-P5F" id="BjC-Mf-AIX"/>
+                <outlet property="cenlab" destination="WMz-ac-hrq" id="5en-tF-MfO"/>
+                <outlet property="leftbtn" destination="bq1-Ve-LXU" id="cat-ha-XDe"/>
+                <outlet property="leftlab" destination="58Q-4e-Uma" id="RYk-FK-weR"/>
+                <outlet property="rigbtn" destination="5pi-CN-IjH" id="xum-si-6bB"/>
+                <outlet property="riglab" destination="9bR-f0-8JR" id="OU0-fc-Zc4"/>
+            </connections>
+            <point key="canvasLocation" x="399" y="356.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="123" width="55" height="55"/>
+        <image name="首页-刷新" width="16" height="16"/>
+    </resources>
+</document>

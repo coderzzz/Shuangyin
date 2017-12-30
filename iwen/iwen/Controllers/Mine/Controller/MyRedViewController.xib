@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyRedViewController">
+            <connections>
+                <outlet property="headview" destination="05N-c9-7Ce" id="0bm-bG-xkV"/>
+                <outlet property="redlab" destination="qxT-ht-fVc" id="AJ4-s0-7sG"/>
+                <outlet property="tableview" destination="9tb-qh-Odb" id="fZH-IN-4l1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9tb-qh-Odb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="66" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="roq-3d-evy"/>
+                        <outlet property="delegate" destination="-1" id="cxg-Io-bmF"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9tb-qh-Odb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RQD-sJ-g9g"/>
+                <constraint firstAttribute="bottom" secondItem="9tb-qh-Odb" secondAttribute="bottom" id="fpr-0V-6Li"/>
+                <constraint firstItem="9tb-qh-Odb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="myV-5S-iRW"/>
+                <constraint firstAttribute="trailing" secondItem="9tb-qh-Odb" secondAttribute="trailing" id="pPI-oR-Jl6"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="565" y="328"/>
+        </view>
+        <view contentMode="scaleToFill" id="05N-c9-7Ce">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="137元" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxT-ht-fVc">
+                    <rect key="frame" x="93" y="126" width="134" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="OTH-oZ-esB"/>
+                        <constraint firstAttribute="width" constant="134" id="P90-Hv-B3r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="红包" translatesAutoresizingMaskIntoConstraints="NO" id="fCR-Db-9Cc">
+                    <rect key="frame" x="123" y="44" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="aKx-2d-J7k"/>
+                        <constraint firstAttribute="width" constant="75" id="o2j-aM-tJl"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qxT-ht-fVc" firstAttribute="top" secondItem="fCR-Db-9Cc" secondAttribute="bottom" constant="7" id="Zt2-bO-Shb"/>
+                <constraint firstItem="fCR-Db-9Cc" firstAttribute="centerX" secondItem="05N-c9-7Ce" secondAttribute="centerX" id="axb-84-5yw"/>
+                <constraint firstItem="fCR-Db-9Cc" firstAttribute="top" secondItem="05N-c9-7Ce" secondAttribute="top" constant="44" id="p8U-Ne-4wI"/>
+                <constraint firstItem="qxT-ht-fVc" firstAttribute="centerX" secondItem="05N-c9-7Ce" secondAttribute="centerX" id="pQu-qF-U64"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="941" y="233"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="红包" width="75" height="75"/>
+    </resources>
+</document>

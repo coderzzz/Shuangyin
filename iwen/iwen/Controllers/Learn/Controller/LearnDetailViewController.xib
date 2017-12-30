@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LearnDetailViewController">
+            <connections>
+                <outlet property="headview" destination="Qba-g3-LxK" id="1kE-6h-hyR"/>
+                <outlet property="subLab" destination="p2H-T7-D7a" id="akQ-T4-POJ"/>
+                <outlet property="tableview" destination="aKH-pu-cbC" id="YYN-fN-56h"/>
+                <outlet property="timeLab" destination="fGu-Jb-R2b" id="td4-qR-4oL"/>
+                <outlet property="titlelab" destination="RlN-0M-c3C" id="NxR-E8-ieh"/>
+                <outlet property="toobar" destination="GH5-gz-8mH" id="GSY-Qz-vK9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aKH-pu-cbC">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Pkq-1m-PnJ"/>
+                        <outlet property="delegate" destination="-1" id="A6y-io-809"/>
+                    </connections>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GH5-gz-8mH">
+                    <rect key="frame" x="0.0" y="460" width="320" height="44"/>
+                    <animations/>
+                    <items/>
+                </toolbar>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aKH-pu-cbC" firstAttribute="leading" secondItem="GH5-gz-8mH" secondAttribute="leading" id="2ln-YB-CKd"/>
+                <constraint firstItem="aKH-pu-cbC" firstAttribute="trailing" secondItem="GH5-gz-8mH" secondAttribute="trailing" id="BmY-uT-FQp"/>
+                <constraint firstItem="aKH-pu-cbC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="T13-sh-Iee"/>
+                <constraint firstItem="GH5-gz-8mH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cuL-cV-tMQ"/>
+                <constraint firstAttribute="bottom" secondItem="GH5-gz-8mH" secondAttribute="bottom" id="d2u-1t-35N"/>
+                <constraint firstItem="GH5-gz-8mH" firstAttribute="top" secondItem="aKH-pu-cbC" secondAttribute="bottom" id="hC2-E7-CnQ"/>
+                <constraint firstAttribute="trailing" secondItem="aKH-pu-cbC" secondAttribute="trailing" id="q29-fY-FwL"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="463" y="323"/>
+        </view>
+        <view contentMode="scaleToFill" id="Qba-g3-LxK">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lab" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2H-T7-D7a">
+                    <rect key="frame" x="15" y="40" width="290" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="圈子-详情-时钟" translatesAutoresizingMaskIntoConstraints="NO" id="24J-kF-d5U">
+                    <rect key="frame" x="15" y="63" width="14" height="14"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lab" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGu-Jb-R2b">
+                    <rect key="frame" x="37" y="59" width="237" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="L" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlN-0M-c3C">
+                    <rect key="frame" x="15" y="19" width="290" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1079" y="125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="圈子-详情-时钟" width="13" height="13"/>
+    </resources>
+</document>

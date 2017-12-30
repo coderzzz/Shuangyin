@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detail" rowHeight="138" id="KGk-i7-Jjw" customClass="DetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广告详情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMO-DX-pVm">
+                        <rect key="frame" x="8" y="8" width="93" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="E7f-ys-3yO"/>
+                            <constraint firstAttribute="height" constant="21" id="Idm-Ii-Dwk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpo-1H-Vz8">
+                        <rect key="frame" x="0.0" y="129" width="320" height="10"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="cvR-7O-8yd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总评：改变2档，3档对血液器官和骨头的伤害，将伤害转嫁到肌肉上，对于路飞是不错的选择，毕竟肉方面吃肉就可以治疗肌肉拉伤了（咳咳）。正经的说：利用人体对肌肉的可控力，橡胶弹簧化单档实现攻击力和速度加成，是不错的果实开发。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5no-yf-AUb">
+                        <rect key="frame" x="8" y="37" width="312" height="89"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="5no-yf-AUb" secondAttribute="trailing" constant="-8" id="9J8-UZ-oG1"/>
+                    <constraint firstItem="rpo-1H-Vz8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="EYJ-qv-8M4"/>
+                    <constraint firstItem="5no-yf-AUb" firstAttribute="top" secondItem="jMO-DX-pVm" secondAttribute="bottom" constant="8" id="G6V-RF-Idh"/>
+                    <constraint firstItem="jMO-DX-pVm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="IVm-6U-WD1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="rpo-1H-Vz8" secondAttribute="bottom" constant="-8" id="Ikg-7e-ycL"/>
+                    <constraint firstItem="5no-yf-AUb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="PKK-2F-TAu"/>
+                    <constraint firstItem="rpo-1H-Vz8" firstAttribute="top" secondItem="5no-yf-AUb" secondAttribute="bottom" constant="3" id="Tqh-mg-sh3"/>
+                    <constraint firstItem="jMO-DX-pVm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="jJY-e9-k7C"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rpo-1H-Vz8" secondAttribute="trailing" constant="-8" id="reG-Hc-zrn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lab" destination="5no-yf-AUb" id="qfC-RA-DU3"/>
+                <outlet property="toplab" destination="jMO-DX-pVm" id="OWj-zc-Nke"/>
+            </connections>
+            <point key="canvasLocation" x="323" y="126"/>
+        </tableViewCell>
+    </objects>
+</document>
