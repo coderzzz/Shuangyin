@@ -70,19 +70,21 @@
 
 - (void)shareView:(ShareView *)shareView clickedButtonAtIndex:(NSInteger)buttonIndex{
     
+    NSLog(@"buttonIndex%ld",(long)buttonIndex);
 //    NSArray *imageArray = @[@"朋友圈",@"微信好友",@"新浪微博",@"QQ好友",@"QQ空间"];
-    if (buttonIndex == 0) {
+    
+    if (buttonIndex == 1) {
         
         [self shareWebPageToPlatformType:UMSocialPlatformType_WechatTimeLine];
-    }else if (buttonIndex == 1){
-        
-        [self shareWebPageToPlatformType:UMSocialPlatformType_WechatSession];
     }else if (buttonIndex == 2){
         
-        [self shareWebPageToPlatformType:UMSocialPlatformType_Sina];
+        [self shareWebPageToPlatformType:UMSocialPlatformType_WechatSession];
     }else if (buttonIndex == 3){
-        
         [self shareWebPageToPlatformType:UMSocialPlatformType_QQ];
+
+    }else if (buttonIndex == 4){
+        
+        [self shareWebPageToPlatformType:UMSocialPlatformType_Qzone];
     }else{
         
         [self shareWebPageToPlatformType:UMSocialPlatformType_Qzone];
@@ -93,18 +95,20 @@
 
 - (void)shareWebPageToPlatformType:(UMSocialPlatformType)platformType
 {
+    
+    
+    
     //创建分享消息对象
     UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];
     
-    //创建网页内容对象
-    NSString* thumbURL =  @"https://mobile.umeng.com/images/pic/home/social/img-1.png";
-    UMShareImageObject *shareObject = [UMShareImageObject shareObjectWithTitle:@"分享" descr:@"双赢广告" thumImage:thumbURL];
+    //创建图片内容对象
+    UMShareImageObject *shareObject = [[UMShareImageObject alloc] init];
+    //如果有缩略图，则设置缩略图本地
+    shareObject.thumbImage = [UIImage imageNamed:@"IOS-81"];
     
-//    //设置网页地址
-//    shareObject.webpageUrl = @"http://mobile.umeng.com/social";
-    
-    //分享消息对象设置分享内容对象
+    [shareObject setShareImage:[UIImage imageNamed:@"1123"]];
     messageObject.shareObject = shareObject;
+
     
     //调用分享接口
     [[UMSocialManager defaultManager] shareToPlatform:platformType messageObject:messageObject currentViewController:self completion:^(id data, NSError *error) {

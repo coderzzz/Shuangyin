@@ -95,9 +95,9 @@
      设置微信的appKey和appSecret
      [微信平台从U-Share 4/5升级说明]http://dev.umeng.com/social/ios/%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3#1_1
      */
-    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:@"wxd2adeee83b0f9771" appSecret:@"aa8a862d105dadc32a524b17b8d30a5f" redirectURL:nil];
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:@"wx12c14f420ef8f731" appSecret:@"f09b8574b8dc28de5451991898db5f7a" redirectURL:nil];
     
-    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatTimeLine appKey:@"wxd2adeee83b0f9771" appSecret:@"aa8a862d105dadc32a524b17b8d30a5f" redirectURL:nil];
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatTimeLine appKey:@"wx12c14f420ef8f731" appSecret:@"f09b8574b8dc28de5451991898db5f7a" redirectURL:nil];
     /*
      * 移除相应平台的分享，如微信收藏
      */
@@ -108,7 +108,7 @@
      100424468.no permission of union id
      [QQ/QZone平台集成说明]http://dev.umeng.com/social/ios/%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3#1_3
      */
-    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_QQ appKey:@"1105821097"/*设置QQ平台的appID*/  appSecret:nil redirectURL:@"http://mobile.umeng.com/social"];
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_QQ appKey:@"1106572921"/*设置QQ平台的appID*/  appSecret:nil redirectURL:@"http://mobile.umeng.com/social"];
     //
     //    /*
     //     设置新浪的appKey和appSecret

@@ -54,7 +54,7 @@
     
     [UIView animateWithDuration:AnimateWithDuration animations:^{
         
-        self.buttonView.frame = CGRectMake(0, ScreenHeight-(Spacing * 3 + KButtonWidth * 2 + LabHight * 2), ScreenWidth, Spacing * 3 + KButtonWidth * 2 + LabHight * 2);
+        self.buttonView.frame = CGRectMake(0, ScreenHeight-(Spacing *2 + KButtonWidth * 1 + LabHight * 1), ScreenWidth, Spacing *2 + KButtonWidth * 1 + LabHight * 1);
         
     }];
     
@@ -78,7 +78,7 @@
     
     [UIView animateWithDuration:AnimateWithDuration animations:^{
         
-        self.buttonView.frame = CGRectMake(0, ScreenHeight+(Spacing * 3 + KButtonWidth * 2 + LabHight * 2), ScreenWidth, Spacing * 3 + KButtonWidth * 2 + LabHight * 2);
+        self.buttonView.frame = CGRectMake(0, ScreenHeight+(Spacing *2 + KButtonWidth * 1 + LabHight * 1), ScreenWidth, Spacing *2 + KButtonWidth * 1 + LabHight * 1);
         
     } completion:^(BOOL finished) {
         
@@ -101,9 +101,9 @@
         
         
         
-        NSArray *imageArray = @[@"朋友圈",@"微信好友",@"新浪微博",@"QQ好友",@"QQ空间"];
+        NSArray *imageArray = @[@"朋友圈",@"微信好友",@"QQ好友",@"QQ空间"];
         
-        _buttonView = [[UIView alloc]initWithFrame:CGRectMake(0, ScreenHeight-64,ScreenWidth,Spacing * 3 + KButtonWidth * 2 + LabHight * 2)];
+        _buttonView = [[UIView alloc]initWithFrame:CGRectMake(0, ScreenHeight-64,ScreenWidth,Spacing *2 + KButtonWidth * 1 + LabHight * 1)];
         
         _buttonView.backgroundColor = [UIColor whiteColor];
         

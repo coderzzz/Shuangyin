@@ -26,10 +26,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string></string>
+			<string>qzoneScheme</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>iwen</string>
+				<string>mqzone</string>
 			</array>
 		</dict>
 		<dict>
@@ -39,7 +39,7 @@
 			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wxd2adeee83b0f9771</string>
+				<string>wx12c14f420ef8f731</string>
 			</array>
 		</dict>
 		<dict>
@@ -47,7 +47,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>QQ41DAF335</string>
+				<string>tencent1106572921</string>
 			</array>
 		</dict>
 		<dict>
@@ -58,19 +58,35 @@
 				<string>wb80891871</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>QQ41F4F679</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>wechat</string>
-		<string>weixin</string>
-		<string>sinaweibohd</string>
-		<string>sinaweibo</string>
-		<string>sinaweibosso</string>
-		<string>weibosdk</string>
+		<string>linkedin</string>
 		<string>weibosdk2.5</string>
+		<string>vk</string>
+		<string>vk-share</string>
+		<string>vkauthorize</string>
+		<string>fbauth</string>
+		<string>fbauth2</string>
+		<string>fb-messenger-api20140430</string>
+		<string>fb-messenger-platform</string>
+		<string>fb-messenger-platform-20150128</string>
+		<string>fb-messenger-platform-20150218</string>
+		<string>fb-messenger-platform-20150305</string>
 		<string>mqqapi</string>
+		<string>fb-messenger-share</string>
+		<string>twitter</string>
+		<string>twitterauth</string>
 		<string>mqq</string>
 		<string>mqqOpensdkSSoLogin</string>
 		<string>mqqconnect</string>
@@ -79,7 +95,9 @@
 		<string>mqqopensdkfriend</string>
 		<string>mqqopensdkapi</string>
 		<string>mqqopensdkapiV2</string>
+		<string>linkedin-sdk2</string>
 		<string>mqqopensdkapiV3</string>
+		<string>mqqopensdkapiV4</string>
 		<string>mqzoneopensdk</string>
 		<string>wtloginmqq</string>
 		<string>wtloginmqq2</string>
@@ -88,13 +106,83 @@
 		<string>mqzonev2</string>
 		<string>mqzoneshare</string>
 		<string>wtloginqzone</string>
+		<string>linkedin-sdk</string>
 		<string>mqzonewx</string>
 		<string>mqzoneopensdkapiV2</string>
 		<string>mqzoneopensdkapi19</string>
 		<string>mqzoneopensdkapi</string>
-		<string>mqzoneopensdk</string>
+		<string>mqqbrowser</string>
+		<string>mttbrowser</string>
+		<string>TencentWeibo</string>
+		<string>tencentweiboSdkv2</string>
+		<string>tim</string>
+		<string>timapi</string>
+		<string>wechat</string>
+		<string>timopensdkfriend</string>
+		<string>timwpa</string>
+		<string>timgamebindinggroup</string>
+		<string>timapiwallet</string>
+		<string>timOpensdkSSoLogin</string>
+		<string>wtlogintim</string>
+		<string>timopensdkgrouptribeshare</string>
+		<string>timopensdkapiV4</string>
+		<string>timgamebindinggroup</string>
+		<string>timopensdkdataline</string>
+		<string>weixin</string>
+		<string>wtlogintimV1</string>
+		<string>timapiV1</string>
 		<string>alipay</string>
 		<string>alipayshare</string>
+		<string>renrenios</string>
+		<string>renrenapi</string>
+		<string>renren</string>
+		<string>renreniphone</string>
+		<string>laiwangsso</string>
+		<string>yixin</string>
+		<string>sinaweibohd</string>
+		<string>yixinopenapi</string>
+		<string>yixinoauth</string>
+		<string>yixinfav</string>
+		<string>laiwangsso</string>
+		<string>instagram</string>
+		<string>whatsapp</string>
+		<string>line</string>
+		<string>tumblr</string>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>sinaweibo</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+		<string>kakao6d5e4ca98ba3b944020c2c90953318e9</string>
+		<string>kakaokompassauth</string>
+		<string>storykompassauth</string>
+		<string>kakaolink</string>
+		<string>kakaotalk-4.5.0</string>
+		<string>kakaostory-2.9.0</string>
+		<string>pinterestsdk.v1</string>
+		<string>dingtalk</string>
+		<string>sinaweibosso</string>
+		<string>dingtalk-open</string>
+		<string>evernote</string>
+		<string>en</string>
+		<string>enx</string>
+		<string>evernotecid</string>
+		<string>evernotemsg</string>
+		<string>youdaonote</string>
+		<string>ynotedictfav</string>
+		<string>com.youdao.note.todayViewNote</string>
+		<string>ynotesharesdk</string>
+		<string>weibosdk</string>
+		<string>gplus</string>
+		<string>pocket</string>
+		<string>readitlater</string>
+		<string>pocket-oauth-v1</string>
+		<string>fb131450656879143</string>
+		<string>en-readitlater-5776</string>
+		<string>com.ideashower.ReadItLaterPro3</string>
+		<string>com.ideashower.ReadItLaterPro</string>
+		<string>com.ideashower.ReadItLaterProAlpha</string>
+		<string>com.ideashower.ReadItLaterProEnterprise</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
