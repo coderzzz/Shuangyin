@@ -173,51 +173,51 @@
 
 #pragma mark ZZShareViewDelegate
 
-- (void)shareView:(ShareView *)shareView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    
-    
-    NSLog(@"%ld",(long)buttonIndex);
-    
-    if (buttonIndex == 1) {
-        
-        [self shareWithType:SSDKPlatformTypeQQ];
-    }
-    
-    if (buttonIndex == 2) {
-        
-        [self shareWithType:SSDKPlatformSubTypeQZone];
-    }
-    
-    if (buttonIndex == 3) {
-        
-        [self shareWithType:SSDKPlatformSubTypeWechatTimeline];
-    }
-    
-    if (buttonIndex == 4) {
-        
-        [self shareWithType:SSDKPlatformSubTypeWechatSession];
-    }
-    if (buttonIndex == 5) {
-        
-        [self shareWithType:SSDKPlatformTypeSinaWeibo];
-    }
-    
-    if (buttonIndex == 6) {
-        
-        [self shareWithType:SSDKPlatformTypeSinaWeibo];
-    }
-}
-
-- (void)shareWithType:(SSDKPlatformType)type{
-    
-    UserModel *user  = [[LoginService shareInstanced]getUserModel];
-    
-        NSString *str =  [NSString stringWithFormat:@"http://wxs.gzinterest.com/index.php?g=Port&m=Topic&a=shareExamResult&exam_id=%@&uid=%@",self.examId,user.uid];
-    
-    NSLog(@"%@",str);
-        [[ShareManager sharePlatform]share:type title:@"分享" content:@"考试结果" url:str];
-//    [[ShareManager sharePlatform]share:type title:@"分享" content:@"勤美堂" url:@"http://fir.im/9q58"];
-}
+//- (void)shareView:(ShareView *)shareView clickedButtonAtIndex:(NSInteger)buttonIndex{
+//    
+//    
+//    NSLog(@"%ld",(long)buttonIndex);
+//    
+//    if (buttonIndex == 1) {
+//        
+//        [self shareWithType:SSDKPlatformTypeQQ];
+//    }
+//    
+//    if (buttonIndex == 2) {
+//        
+//        [self shareWithType:SSDKPlatformSubTypeQZone];
+//    }
+//    
+//    if (buttonIndex == 3) {
+//        
+//        [self shareWithType:SSDKPlatformSubTypeWechatTimeline];
+//    }
+//    
+//    if (buttonIndex == 4) {
+//        
+//        [self shareWithType:SSDKPlatformSubTypeWechatSession];
+//    }
+//    if (buttonIndex == 5) {
+//        
+//        [self shareWithType:SSDKPlatformTypeSinaWeibo];
+//    }
+//    
+//    if (buttonIndex == 6) {
+//        
+//        [self shareWithType:SSDKPlatformTypeSinaWeibo];
+//    }
+//}
+//
+//- (void)shareWithType:(SSDKPlatformType)type{
+//    
+//    UserModel *user  = [[LoginService shareInstanced]getUserModel];
+//    
+//        NSString *str =  [NSString stringWithFormat:@"http://wxs.gzinterest.com/index.php?g=Port&m=Topic&a=shareExamResult&exam_id=%@&uid=%@",self.examId,user.uid];
+//    
+//    NSLog(@"%@",str);
+//        [[ShareManager sharePlatform]share:type title:@"分享" content:@"考试结果" url:str];
+////    [[ShareManager sharePlatform]share:type title:@"分享" content:@"勤美堂" url:@"http://fir.im/9q58"];
+//}
 
 
 

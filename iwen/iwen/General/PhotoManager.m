@@ -43,7 +43,7 @@
 	camera.delegate = self;
 	camera.allowsEditing = NO;
     isSaveToLibrary = NO;
-    qualityNum = 0;
+    qualityNum = 2;
 	//检查摄像头是否支持摄像机模式
 	if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
 	{
@@ -84,7 +84,7 @@
     video.delegate = self;
     video.allowsEditing = NO;
     isSaveToLibrary = NO;
-    qualityNum = 0;
+    qualityNum = 2;
     //检查摄像头是否支持摄像机模式
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
     {

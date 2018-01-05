@@ -262,7 +262,6 @@
 		E2796C071BCCF2AC0096F4D4 /* BlogTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2796C051BCCF2AC0096F4D4 /* BlogTypeViewController.xib */; };
 		E2796C0B1BCCF4940096F4D4 /* BlogTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2796C091BCCF4940096F4D4 /* BlogTypeCell.m */; };
 		E2796C0C1BCCF4940096F4D4 /* BlogTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2796C0A1BCCF4940096F4D4 /* BlogTypeCell.xib */; };
-		E2796C141BCF3CF00096F4D4 /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2796C131BCF3CF00096F4D4 /* ShareView.m */; };
 		E2796C181BCF59760096F4D4 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2796C161BCF59760096F4D4 /* CommonViewController.m */; };
 		E2796C191BCF59760096F4D4 /* CommonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2796C171BCF59760096F4D4 /* CommonViewController.xib */; };
 		E2796C1D1BCF800F0096F4D4 /* CommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2796C1B1BCF800F0096F4D4 /* CommonCell.m */; };
@@ -802,8 +801,6 @@
 		E2796C081BCCF4940096F4D4 /* BlogTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogTypeCell.h; sourceTree = "<group>"; };
 		E2796C091BCCF4940096F4D4 /* BlogTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogTypeCell.m; sourceTree = "<group>"; };
 		E2796C0A1BCCF4940096F4D4 /* BlogTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlogTypeCell.xib; sourceTree = "<group>"; };
-		E2796C121BCF3CF00096F4D4 /* ShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareView.h; sourceTree = "<group>"; };
-		E2796C131BCF3CF00096F4D4 /* ShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareView.m; sourceTree = "<group>"; };
 		E2796C151BCF59760096F4D4 /* CommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
 		E2796C161BCF59760096F4D4 /* CommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
 		E2796C171BCF59760096F4D4 /* CommonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonViewController.xib; sourceTree = "<group>"; };
@@ -1376,8 +1373,6 @@
 				E2796C081BCCF4940096F4D4 /* BlogTypeCell.h */,
 				E2796C091BCCF4940096F4D4 /* BlogTypeCell.m */,
 				E2796C0A1BCCF4940096F4D4 /* BlogTypeCell.xib */,
-				E2796C121BCF3CF00096F4D4 /* ShareView.h */,
-				E2796C131BCF3CF00096F4D4 /* ShareView.m */,
 				E2796C1A1BCF800F0096F4D4 /* CommonCell.h */,
 				E2796C1B1BCF800F0096F4D4 /* CommonCell.m */,
 				E2796C1C1BCF800F0096F4D4 /* CommonCell.xib */,
@@ -2197,8 +2192,8 @@
 				TargetAttributes = {
 					E26FE51F1BC5FEF5006FD646 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = L3E9XET966;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 6TZ958XNMU;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 0;
@@ -2345,13 +2340,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iwen-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A832B6E756E40E8026828C62 /* [CP] Embed Pods Frameworks */ = {
@@ -2375,9 +2373,17 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iwen/Pods-iwen-resources.sh",
+				"${PODS_ROOT}/AMap2DMap/MAMapKit.framework/Versions/2.5.0.ce99742/Resources/AMap.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialUI/UMSocialSDKResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2543,7 +2549,6 @@
 				E24013D41BC642E700D462E9 /* TabBarViewController.m in Sources */,
 				E2780DF51C8FCA25006CFF09 /* PCell.m in Sources */,
 				E287FEE61C103D6300B7C329 /* DACircularProgressView.m in Sources */,
-				E2796C141BCF3CF00096F4D4 /* ShareView.m in Sources */,
 				E287FEE71C103D6300B7C329 /* EMSDImageCache.m in Sources */,
 				E2796C361BD0D6EB0096F4D4 /* RcoderCell.m in Sources */,
 				E287FEF41C103D6300B7C329 /* UIImageView+EMHighlightedWebCache.m in Sources */,
@@ -2738,9 +2743,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: xiansheng Lu (L3E9XET966)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: xiansheng Lu (L3E9XET966)";
-				DEVELOPMENT_TEAM = L3E9XET966;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6TZ958XNMU;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2770,7 +2775,7 @@
 					"\"$(SDKROOT)/usr/include/libxml2\"",
 				);
 				INFOPLIST_FILE = iwen/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2781,10 +2786,10 @@
 					"$(PROJECT_DIR)/iwen/Vendors/ShareSDK/libraries/extends/SinaWeiboSDK",
 					"$(PROJECT_DIR)/iwen/Vendors/ShareSDK/libraries/extends/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gzinterest.saky112;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzinterest.saky112110;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8cb08db4-f198-4d0f-876a-1183adcd5d0e";
-				PROVISIONING_PROFILE_SPECIFIER = shuang_adhoc;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2795,9 +2800,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: xiansheng Lu (L3E9XET966)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: xiansheng Lu (L3E9XET966)";
-				DEVELOPMENT_TEAM = L3E9XET966;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6TZ958XNMU;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2827,7 +2832,7 @@
 					"\"$(SRCROOT)/iwen/Vendors/AlipaySDK\"",
 				);
 				INFOPLIST_FILE = iwen/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2838,10 +2843,10 @@
 					"$(PROJECT_DIR)/iwen/ShareSDK/libraries/extends/SinaWeiboSDK",
 					"$(PROJECT_DIR)/iwen/ShareSDK/libraries/extends/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gzinterest.saky112;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzinterest.saky112110;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8cb08db4-f198-4d0f-876a-1183adcd5d0e";
-				PROVISIONING_PROFILE_SPECIFIER = shuang_adhoc;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

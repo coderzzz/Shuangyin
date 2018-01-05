@@ -54,7 +54,7 @@
     
     [UIView animateWithDuration:AnimateWithDuration animations:^{
         
-        self.buttonView.frame = CGRectMake(0, ScreenWidth-(Spacing * 3 + KButtonWidth * 2 + LabHight * 2), ScreenWidth, Spacing * 3 + KButtonWidth * 2 + LabHight * 2);
+        self.buttonView.frame = CGRectMake(0, ScreenHeight-(Spacing * 3 + KButtonWidth * 2 + LabHight * 2), ScreenWidth, Spacing * 3 + KButtonWidth * 2 + LabHight * 2);
         
     }];
     

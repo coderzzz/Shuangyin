@@ -71,9 +71,24 @@
 - (void)shareView:(ShareView *)shareView clickedButtonAtIndex:(NSInteger)buttonIndex{
     
 //    NSArray *imageArray = @[@"朋友圈",@"微信好友",@"新浪微博",@"QQ好友",@"QQ空间"];
-   
+    if (buttonIndex == 0) {
+        
+        [self shareWebPageToPlatformType:UMSocialPlatformType_WechatTimeLine];
+    }else if (buttonIndex == 1){
+        
+        [self shareWebPageToPlatformType:UMSocialPlatformType_WechatSession];
+    }else if (buttonIndex == 2){
+        
+        [self shareWebPageToPlatformType:UMSocialPlatformType_Sina];
+    }else if (buttonIndex == 3){
+        
+        [self shareWebPageToPlatformType:UMSocialPlatformType_QQ];
+    }else{
+        
+        [self shareWebPageToPlatformType:UMSocialPlatformType_Qzone];
+    }
     
-    [self shareWebPageToPlatformType:UMSocialPlatformType_WechatSession];
+    
 }
 
 - (void)shareWebPageToPlatformType:(UMSocialPlatformType)platformType
@@ -82,11 +97,11 @@
     UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];
     
     //创建网页内容对象
-//    NSString* thumbURL =  @"https://mobile.umeng.com/images/pic/home/social/img-1.png";
-    UMShareWebpageObject *shareObject = [UMShareWebpageObject shareObjectWithTitle:@"分享" descr:@"双赢广告" thumImage:[UIImage imageNamed:@"IOS-81"]];
+    NSString* thumbURL =  @"https://mobile.umeng.com/images/pic/home/social/img-1.png";
+    UMShareImageObject *shareObject = [UMShareImageObject shareObjectWithTitle:@"分享" descr:@"双赢广告" thumImage:thumbURL];
     
-    //设置网页地址
-    shareObject.webpageUrl = @"http://mobile.umeng.com/social";
+//    //设置网页地址
+//    shareObject.webpageUrl = @"http://mobile.umeng.com/social";
     
     //分享消息对象设置分享内容对象
     messageObject.shareObject = shareObject;
