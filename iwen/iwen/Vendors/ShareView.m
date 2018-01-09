@@ -99,13 +99,21 @@
     
     if (_buttonView == nil) {
         
+//        ,@"微信好友",@"QQ好友",
         
-        
-        NSArray *imageArray = @[@"朋友圈",@"微信好友",@"QQ好友",@"QQ空间"];
+        NSArray *imageArray = @[@"朋友圈",@"QQ空间"];
         
         _buttonView = [[UIView alloc]initWithFrame:CGRectMake(0, ScreenHeight-64,ScreenWidth,Spacing *2 + KButtonWidth * 1 + LabHight * 1)];
         
         _buttonView.backgroundColor = [UIColor whiteColor];
+        
+        UILabel *centerLab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 21)];
+        [_buttonView addSubview:centerLab];
+        centerLab.text = @"分享成功后才能提现";
+        centerLab.font = [UIFont systemFontOfSize:15];
+        centerLab.textAlignment = NSTextAlignmentCenter;
+        centerLab.textColor = [UIColor darkGrayColor];
+        
         
         CGFloat hSpace = (ScreenWidth-4*KButtonWidth)/5;
         
@@ -118,7 +126,7 @@
                 if (index <=imageArray.count) {
                     
                     
-                    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(a*hSpace +(a-1)*KButtonWidth, (row+1)*Spacing +row*(KButtonWidth+LabHight), KButtonWidth, KButtonWidth)];
+                    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(a*hSpace +(a-1)*KButtonWidth, (row+1)*Spacing +row*(KButtonWidth+LabHight) + 8, KButtonWidth, KButtonWidth)];
                     btn.tag = index;
                     
                     [btn setBackgroundImage:[UIImage imageNamed:imageArray[index-1]] forState:UIControlStateNormal];

@@ -78,7 +78,7 @@
         [self shareWebPageToPlatformType:UMSocialPlatformType_WechatTimeLine];
     }else if (buttonIndex == 2){
         
-        [self shareWebPageToPlatformType:UMSocialPlatformType_WechatSession];
+         [self shareWebPageToPlatformType:UMSocialPlatformType_Qzone];
     }else if (buttonIndex == 3){
         [self shareWebPageToPlatformType:UMSocialPlatformType_QQ];
 

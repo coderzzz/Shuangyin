@@ -2192,7 +2192,7 @@
 				TargetAttributes = {
 					E26FE51F1BC5FEF5006FD646 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 6TZ958XNMU;
+						DevelopmentTeam = L3E9XET966;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -2743,9 +2743,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6TZ958XNMU;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = L3E9XET966;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2786,7 +2786,7 @@
 					"$(PROJECT_DIR)/iwen/Vendors/ShareSDK/libraries/extends/SinaWeiboSDK",
 					"$(PROJECT_DIR)/iwen/Vendors/ShareSDK/libraries/extends/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gzinterest.saky112110;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzinterest.saky112;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2800,9 +2800,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6TZ958XNMU;
+				DEVELOPMENT_TEAM = L3E9XET966;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2843,7 +2843,7 @@
 					"$(PROJECT_DIR)/iwen/ShareSDK/libraries/extends/SinaWeiboSDK",
 					"$(PROJECT_DIR)/iwen/ShareSDK/libraries/extends/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gzinterest.saky112110;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzinterest.saky112;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
