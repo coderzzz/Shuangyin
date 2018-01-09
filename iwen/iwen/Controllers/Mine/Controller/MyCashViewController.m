@@ -104,9 +104,18 @@
     //创建图片内容对象
     UMShareImageObject *shareObject = [[UMShareImageObject alloc] init];
     //如果有缩略图，则设置缩略图本地
-    shareObject.thumbImage = [UIImage imageNamed:@"IOS-81"];
     
-    [shareObject setShareImage:[UIImage imageNamed:@"1123"]];
+    
+    CGPoint point = CGPointMake(250, 810);
+    NSString *money = [NSString stringWithFormat:@"¥%.2f元",[dataList[seletIndex][@"famount"] floatValue]/100];
+    UIImage *shareImage = [self jx_WaterImageWithImage:[UIImage imageNamed:@"广告图2"] text:money textPoint:point attributedString:nil];
+    
+    
+    
+    
+    shareObject.thumbImage = shareImage;
+    
+    [shareObject setShareImage:shareImage];
     messageObject.shareObject = shareObject;
 
     
@@ -155,6 +164,24 @@
 //        [self alertWithError:error];
     }];
 }
+
+
+- (UIImage *)jx_WaterImageWithImage:(UIImage *)image text:(NSString *)text textPoint:(CGPoint)point attributedString:(NSDictionary * )attributed{
+    //1.开启上下文
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, 0);
+    //2.绘制图片
+    [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    //添加水印文字
+    [text drawAtPoint:point withAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:58]}];
+    //3.从上下文中获取新图片
+    UIImage * newImage = UIGraphicsGetImageFromCurrentImageContext();
+    //4.关闭图形上下文
+    UIGraphicsEndImageContext();
+    //返回图片
+    return newImage;
+}
+
+
 
 - (IBAction)doneAction:(id)sender {
     
